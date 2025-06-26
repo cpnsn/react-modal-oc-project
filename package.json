@@ -1,25 +1,23 @@
 {
   "name": "react-modal-oc-project",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React Modal Component for OC project",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.js"
-    }
-  },
+  "main": "./dist/index.js",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --out-dir dist --extensions \".jsx,.js\""
+    "build": "babel src --out-dir dist --extensions \".jsx,.js\"",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "react",
     "modal",
     "component"
   ],
-  "author": "Ton Nom ou OC",
+  "author": "oc student",
   "license": "MIT",
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
@@ -31,8 +29,12 @@
     "@babel/preset-env": "^7.27.2",
     "@babel/preset-react": "^7.27.1",
     "autoprefixer": "^10.4.21",
+    "babel-plugin-add-import-extension": "^1.6.0",
     "postcss": "^8.5.6",
     "tailwindcss": "3.4",
     "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "react-modal-oc-project": "file:react-modal-oc-project-1.0.7.tgz"
   }
 }
