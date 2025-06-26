@@ -4,6 +4,11 @@
   "description": "React Modal Component for OC project",
   "main": "./dist/index.js",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
   "files": [
     "dist"
   ],
