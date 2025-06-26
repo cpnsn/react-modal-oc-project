@@ -1,6 +1,6 @@
 {
   "name": "react-modal-oc-project",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "React Modal Component for OC project",
   "main": "./dist/index.js",
   "type": "module",
