@@ -1,10 +1,9 @@
 import React from "react";
-export default function Modal(_ref) {
-  var {
-    isOpen,
-    onClose,
-    children
-  } = _ref;
+export default function Modal({
+  isOpen,
+  onClose,
+  children
+}) {
   if (!isOpen) return null;
   return /*#__PURE__*/React.createElement("div", {
     className: "fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
